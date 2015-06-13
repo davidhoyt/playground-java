@@ -1,0 +1,13 @@
+!.gitignore
+
+/build
+/target
+
+/.gradle/
+/.idea/
+
+/gradle
+/gradlew
+
+/*.iml
+
