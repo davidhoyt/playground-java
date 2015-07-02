@@ -57,24 +57,24 @@ public class Section3_B {
     }
 
     public static void main(String[] args) {
-        System.out.println(sum(List.of(1, 2, 3)));
+        System.out.println(sum(list(1, 2, 3)));
 
-        System.out.println(product(List.of(2, 3, 4)));
+        System.out.println(product(list(2, 3, 4)));
 
-        System.out.println(anytrue(List.of(false, false, true, false)));
+        System.out.println(anytrue(list(false, false, true, false)));
 
-        System.out.println(alltrue(List.of(true, true, true, false)));
+        System.out.println(alltrue(list(true, true, true, true)));
 
-        System.out.println(append(List.of(1, 2), List.of(3, 4)));
+        System.out.println(append(list(1, 2), list(3, 4)));
 
-        System.out.println(doubleall1(List.of(1, 2, 3)));
+        System.out.println(doubleall1(list(1, 2, 3)));
 
-        System.out.println(doubleall2(List.of(1, 2, 3)));
+        System.out.println(doubleall2(list(1, 2, 3)));
 
-        System.out.println(summatrix(List.of(
-            List.of(1, 2, 3),
-            List.of(4, 5, 6),
-            List.of(7, 8, 9)
+        System.out.println(summatrix(list(
+            list(1, 2, 3),
+            list(4, 5, 6),
+            list(7, 8, 9)
         ))); //45
 
         Node<Integer> tree =

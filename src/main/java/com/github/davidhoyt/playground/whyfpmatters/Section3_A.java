@@ -16,6 +16,6 @@ public class Section3_A {
     }
 
     public static void main(String[] args) {
-        System.out.println(sum(of(1, 2, 3, 4)));
+        System.out.println(sum(list(1, 2, 3, 4)));
     }
 }

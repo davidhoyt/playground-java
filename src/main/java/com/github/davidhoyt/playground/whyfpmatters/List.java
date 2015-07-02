@@ -88,6 +88,10 @@ public class List<T> {
     }
 
     public static <T> List<T> of(T...values) {
+        return list(values);
+    }
+
+    public static <T> List<T> list(T...values) {
         if (values == null) {
             return nil();
         } else {
