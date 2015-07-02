@@ -13,7 +13,7 @@ public class List<T> {
     }
 
     public <A> A foldLeft(A zero, BiFunction<A, T, A> fn) {
-        T current; // = head;
+        T current;
         A last = zero;
         List<T> rest = this;
         while (!rest.isNil()) {
