@@ -29,6 +29,7 @@ public class Main implements UncurryOps {
         final Function2<Integer, Double, String> fn2 = uncurry2(fn3.apply("a"));
 //        final Functional.Function1<Integer, Functional.Function1<Integer, Functional.Function1<Double, String>>> ccc = fn3.curried();
         final Function1<String, Function1<Integer, Function1<Double, String>>> ccc = uncurry3(fn3.curried());
+        final Function2<Integer, Double, String> fn2_ = uncurry2(fn3.apply(""));
 //        final Functional.Function1<String, Functional.Function2<Integer, Double, String>> ccc2 = fn3.curried();
         final Function1<Double, String> fn1 = fn2.apply(1);
         final String fn0 = fn1.apply(0.0D);
@@ -64,10 +65,10 @@ public class Main implements UncurryOps {
             .apply("john")
             .apply("doe")
             .apply(new Products.Address(
-                    "1234 Sesame St",
-                    "New York City",
-                    "NY",
-                    "12345"
+                "1234 Sesame St",
+                "New York City",
+                "NY",
+                "12345"
             ));
 
         System.out.println(c1.equals(c2));
