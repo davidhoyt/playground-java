@@ -5,11 +5,23 @@ import com.github.davidhoyt.playground.functional.Function2;
 import com.github.davidhoyt.playground.functional.Function3;
 import com.github.davidhoyt.playground.functional.UncurryOps;
 
+import java.util.Optional;
 import java.util.function.Function;
 
 public class Main implements UncurryOps {
     public static void main(String[] args) throws Exception {
         new Main().run();
+
+        Optional<String> o = Optional.of("test");
+//        Optional<String> o = Optional.empty();
+        String s = o.orElseGet(() -> {
+            System.out.println("OR ELSE GET");
+            return "OR ELSE";
+        });
+
+        System.out.println(s);
+
+
     }
 
     void run() throws Exception {

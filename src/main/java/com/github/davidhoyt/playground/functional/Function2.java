@@ -14,4 +14,8 @@ public interface Function2<T1, T2, R> extends Function1<T1, Function1<T2, R>> {
     default BiFunction<T1, T2, R> toBiFunction() {
         return this::apply;
     }
+
+    static <T1, T2, R> Function2<T1, T2, R> uncurry(Function1<T1, Function1<T2, R>> curried) {
+        return (T1 t1, T2 t2) -> curried.apply(t1).apply(t2);
+    }
 }

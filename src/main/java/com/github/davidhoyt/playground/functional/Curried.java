@@ -1,5 +1,5 @@
 package com.github.davidhoyt.playground.functional;
 
-public interface Curried<TCurry> {
+interface Curried<TCurry> {
     TCurry curried();
 }
